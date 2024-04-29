@@ -1,21 +1,21 @@
 class Orang {
   constructor(name) {
     this.name = name;
-    console.log("object has been created"); //* object has been created
+    console.log("object has been create " + name);
   }
 
   makan() {
-    console.log("sedang makan"); //* sedang makan
+    console.log("sedang makan");
   }
 
   static jalan() {
-    console.log("sedang jalan"); //* sedang jalan
+    console.log("sedang jalan");
   }
 }
 
 class Pekerjaan extends Orang {
   constructor(name) {
-    super(name); //* object has been created
+    super(name); //* object has been created edi
   }
 }
 
@@ -24,3 +24,5 @@ class Pekerjaan extends Orang {
 
 const programer = new Pekerjaan("edi");
 programer.makan(); //* sedang makan
+
+Orang.jalan(); //* sedang jalan
