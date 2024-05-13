@@ -15,14 +15,17 @@ class Orang {
 
 class Pekerjaan extends Orang {
   constructor(name) {
-    super(name); //* object has been created edi
+    super(name); //* object has been created tomo
+  }
+  makan() {
+    console.log("sedang makan mie ayam");
   }
 }
 
 // const edi = new Orang("Edi Hartono");
 // console.log(edi.name);
 
-const programer = new Pekerjaan("edi");
-programer.makan(); //* sedang makan
+const programer = new Pekerjaan("tomo");
+programer.makan(); //* sedang makan mie ayam
 
 Orang.jalan(); //* sedang jalan
